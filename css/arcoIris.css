@@ -1,0 +1,51 @@
+.minhaDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    background: linear-gradient(to right, rgb(76, 217, 105), rgb(52, 170, 220), rgb(88, 86, 217), rgb(255, 45, 83));
+    width: 250px;
+    height: 90px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 999;
+    animation: arcoIris 2s linear infinite;
+}
+
+@keyframes arcoIris {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.conteudo .caixa,
+.conteudo span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Verdana";
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.conteudo .caixa {
+    z-index: 1;
+    background-color: #5a5a5a;
+    width: 240px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.conteudo>span {
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    border-radius: 10px;
+}

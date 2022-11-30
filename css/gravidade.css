@@ -1,0 +1,13 @@
+.minhaDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.bola{
+    width:  50px;              /* largura da bola */
+    height: 50px;              /* comprimento da bola */
+    border-radius: 50%;        /* borda em formato de circulo */
+    background-color: black; /* cor da bola */
+    position: absolute;
+    bottom: 500px; /* altura/distancia do chão */
+}
